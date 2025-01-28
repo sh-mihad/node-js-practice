@@ -7,3 +7,11 @@ const fs = require("fs")
         console.log(data);
     }
 })
+
+fs.writeFile("./data/asyncWrite.txt","this is another asyncronus file writing",(err)=>{
+    if(err){
+        console.log("there was an error");
+    }else{
+        console.log("file successfully create");
+    }
+})
